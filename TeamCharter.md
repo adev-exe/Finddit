@@ -7,7 +7,7 @@ Team Charter
 | Arturo Calderon          | calderona19@students.ecu.edu |  Teams          |
 | Brianna Cappo         | cappob20@students.ecu.edu     | Teams                   |
 | Ed Mouko | moukoe19@students.ecu.edu     | Method                   |
-| Jaira Nava      | navaj17@students.ecu.edu     | Method                   |
+| Jaira Nava      | navaj17@students.ecu.edu     | Teams                   |
 
 | Team Member Names | Strengths related to teamwork and the team’s assigned task. | Weaknesses related to teamwork and the team’s assigned task. |
 | -------------------- | ----------------------------------------------------------- | ------------------------------------------------------------ |
