@@ -5,7 +5,7 @@ Team Charter
 | ----------------- | -------------------------- | ------------------------ |
 | Jahmand Attucks        | @students.ecu.edu     | Method                   |
 | Arturo Calderon          | calderona19@students.ecu.edu |  Teams          |
-| Brianna Cappo         | email@students.ecu.edu     | Method                   |
+| Brianna Cappo         | cappob20@students.ecu.edu     | Teams                   |
 | Ed Mouko | email@students.ecu.edu     | Method                   |
 | Jaira Nava      | email@students.ecu.edu     | Method                   |
 
