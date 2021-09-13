@@ -11,11 +11,11 @@ Team Charter
 
 | Team Member Names | Strengths related to teamwork and the team’s assigned task. | Weaknesses related to teamwork and the team’s assigned task. |
 | -------------------- | ----------------------------------------------------------- | ------------------------------------------------------------ |
-| Member 1          | Strengths     | Weaknesses             |
-| Member 2          | Strengths     | Weaknesses             |
-| Member 3          | Strengths     | Weaknesses             |
-| Member 4          | Strengths     | Weaknesses             |
-| Member 5          | Strengths     | Weaknesses             |
+| Jahmand Attucks          | Strengths     | Weaknesses             |
+| Arturo Calderon          | Strengths     | Weaknesses             |
+| Brianna Cappo           | Strengths     | Weaknesses             |
+| Ed Mouko          | Strengths     | Weaknesses             |
+| Jaira Nava          | Strengths     | Weaknesses             |
 
 1. **What are your team’s goals for the collaboration?**
 
