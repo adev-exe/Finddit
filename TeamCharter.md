@@ -11,7 +11,7 @@ Team Charter
 
 | Team Member Names | Strengths related to teamwork and the team’s assigned task. | Weaknesses related to teamwork and the team’s assigned task. |
 | -------------------- | ----------------------------------------------------------- | ------------------------------------------------------------ |
-| Jahmand Attucks          | Strengths     | Weaknesses             |
+| Jahmand Attucks          | Strengths java, researching things    | Weaknesses  ok with python, no js knowledge, pretty quiet mostly           |
 | Arturo Calderon          | Strengths     | Weaknesses             |
 | Brianna Cappo           | Strengths     | Weaknesses             |
 | Ed Mouko          | Strengths     | Weaknesses             |
