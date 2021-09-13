@@ -5,16 +5,16 @@ Team Charter
 | Jahmad Attucks        | attucksj15@students.ecu.edu     | Teams                |
 | Arturo Calderon          | calderona19@students.ecu.edu |  Teams          |
 | Brianna Cappo         | cappob20@students.ecu.edu     | Teams                   |
-| Ed Mouko | moukoe19@students.ecu.edu     | Method                   |
+| Ed Mouko | moukoe19@students.ecu.edu     | Teams                   |
 | Jaira Nava      | navaj17@students.ecu.edu     | Teams                   |
 
-| Team Member Names | Strengths related to teamwork and the team’s assigned task. | Weaknesses related to teamwork and the team’s assigned task. |
-| -------------------- | ----------------------------------------------------------- | ------------------------------------------------------------ |
-| Jahmad Attucks          | Strengths java, researching things    | Weaknesses  ok with python, no js knowledge, quiet mostly           |
-| Arturo Calderon          | Strengths     | Weaknesses             |
-| Brianna Cappo           | Strengths     | Weaknesses             |
-| Ed Mouko          | Strengths     | Weaknesses             |
-| Jaira Nava          | Strengths java, doing research, drawing    | Weaknesses okay with python, quiet            |
+| Team Member Names	   | Strengths related to teamwork and the team’s assigned task.	 | Weaknesses related to teamwork and the team’s assigned task.		|
+| -------------------- | -----------------------------------------------------------     | ------------------------------------------------------------	    |
+| Jahmad Attucks      | Java, researching things									     | ok with python, no js knowledge, quiet mostly                    |
+| Arturo Calderon      | Early start, Java, okay with html/css						     | Talks too much, Backend, ok with python/javascript               |
+| Brianna Cappo        | Will always do my part, resourceful, and efficient              | Lack of web-dev knowledge and strict scheduling                  |
+| Ed Mouko             | Java														     | No html and js experience, little python experience              |
+| Jaira Nava           | Java, doing research, drawing								     | okay with python, quiet, some knowledge on javascript            |
 
 1. **What are your team’s goals for the collaboration?**
 
