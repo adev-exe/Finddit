@@ -15,7 +15,7 @@ Team Charter
 | Arturo Calderon          | Strengths     | Weaknesses             |
 | Brianna Cappo           | Strengths     | Weaknesses             |
 | Ed Mouko          | Strengths     | Weaknesses             |
-| Jaira Nava          | Strengths     | Weaknesses             |
+| Jaira Nava          | Strengths java, doing research, drawing    | Weaknesses okay with python, quiet            |
 
 1. **What are your team’s goals for the collaboration?**
 
