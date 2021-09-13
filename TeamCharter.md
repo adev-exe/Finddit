@@ -19,7 +19,6 @@ Team Charter
 
 1. **What are your team’s goals for the collaboration?**
 
-	List your goals here. These should be high-level goals, and can be directly related to the project (what you hope to build), the process (how you hope to build it), the tools (what you hope to use to build it), or personal goals (what you hope to get out of the project).
    - Learn Flask and Bootstrap
    - Gather resources to learn HTML and CSS
    - Learn how to use Gitlab/Git
