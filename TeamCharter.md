@@ -37,16 +37,16 @@ Team Charter
 
 3. **What is your timetable for activities?**  
 
-   Week 1: Plan out each feature/ Pick UI layout. Plan out backend 
-   Week 2-3: Front-Ready Protype 1 ready and Basic Functions of Backend Ready 
-   Week 3-8: Finsish Front/back 
-   Week 9-11: Create Site and release to test out
+   - Week 1: Plan out each feature/ Pick UI layout. Plan out backend 
+   - Week 2-3: Front-Ready Protype 1 ready and Basic Functions of Backend Ready 
+   - Week 3-8: Finsish Front/back 
+   - Week 9-11: Create Site and release to test out
 
 4. **What are your team’s expectations regarding meeting attendance (being on time, leaving early, missing meetings, etc.)?**
 
-   Meetings on Mondays at 5pm - all must attend 
-   Meetings on Wednesdays at 5pm - all must attend 
-   Meetings on Fridays at 9pm  - optional, will only last a few minutes
+   - Meetings on Mondays at 5pm - all must attend 
+   - Meetings on Wednesdays at 5pm - all must attend 
+   - Meetings on Fridays at 9pm  - optional, will only last a few minutes
 
 5. **What constitutes an acceptable excuse for missing a meeting or a deadline?  What types of excuses will not be considered acceptable?**
 
@@ -62,7 +62,7 @@ Team Charter
 
 
 6. **What process will team members follow if they have an emergency and cannot attend a team meeting or complete their individual work promised to the team (deliverable)?**
-   Message group on Teams with the excuse. Depending on excuse the team memeber may or may not need to complete their individual work (it will be decided by the rest of the Team at that time).
+   - Message group on Teams with the excuse. Depending on excuse the team memeber may or may not need to complete their individual work (it will be decided by the rest of the Team at that time).
 
 
 7. **What are your team’s expectations regarding the quality of team members’ preparation for team meetings and the quality of the deliverables that members bring to the team?**
