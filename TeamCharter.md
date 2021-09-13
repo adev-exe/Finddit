@@ -29,11 +29,11 @@ Team Charter
 
 2. **Who is responsible for each activity? What roles will each member have?**
 
-   Jahmad Attucks		- HTML/CSS Design 
-   Arturo Calderon		- Backend and HTML/CSS 
-   Brianna Cappo		- Writing the backend and help with webpage. 
-   Ed Mouko				- Working on learning JS & HTML and help write the website.
-   Jaira Nava			- HTML/CSS Design 
+   - Jahmad Attucks:		 HTML/CSS Design 
+   - Arturo Calderon:		 Backend and HTML/CSS 
+   - Brianna Cappo:		 Writing the backend and help with webpage. 
+   - Ed Mouko:				 Working on learning JS & HTML and help write the website.
+   - Jaira Nava:			 HTML/CSS Design 
 
 3. **What is your timetable for activities?**  
 
