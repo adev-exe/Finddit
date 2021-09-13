@@ -1,54 +1,83 @@
 Team Charter
 ============
 
-| Team Member Names | Contact Information        | Preferred Contact Method |
-| ----------------- | -------------------------- | ------------------------ |
-| Jahmand Attucks        | @students.ecu.edu     | Method                   |
-| Arturo Calderon          | calderona19@students.ecu.edu |  Teams          |
-| Brianna Cappo         | email@students.ecu.edu     | Method                   |
-| Ed Mouko | email@students.ecu.edu     | Method                   |
-| Jaira Nava      | email@students.ecu.edu     | Method                   |
-
-| Team Member Names | Strengths related to teamwork and the team’s assigned task. | Weaknesses related to teamwork and the team’s assigned task. |
-| -------------------- | ----------------------------------------------------------- | ------------------------------------------------------------ |
-| Member 1          | Strengths     | Weaknesses             |
-| Member 2          | Strengths     | Weaknesses             |
-| Member 3          | Strengths     | Weaknesses             |
-| Member 4          | Strengths     | Weaknesses             |
-| Member 5          | Strengths     | Weaknesses             |
+| Team Member Names | Contact Information			| Preferred Contact Method |
+| ----------------- | --------------------------	| ------------------------ |
+| Jahmand Attucks   | attucksj15@students.ecu.edu   | Teams					   |
+| Arturo Calderon   | calderona19@students.ecu.edu  |  Teams				   |
+| Brianna Cappo     | cappob20@students.ecu.edu     | Teams                    |
+| Ed Mouko			| moukoe19@students.ecu.edu     | Teams                    |
+| Jaira Nava		| navaj17@students.ecu.edu      | Teams                    |
+ 
+| Team Member Names	   | Strengths related to teamwork and the team’s assigned task.	 | Weaknesses related to teamwork and the team’s assigned task.		|
+| -------------------- | -----------------------------------------------------------     | ------------------------------------------------------------	    |
+| Jahmand Attucks      | Java, researching things									     | ok with python, no js knowledge, quiet mostly                    |
+| Arturo Calderon      | Early start, Java, okay with html/css						     | Talks too much, Backend, ok with python/javascript               |
+| Brianna Cappo        | Will always do my part, resourceful, and efficient              | Lack of web-dev knowledge and strict scheduling                  |
+| Ed Mouko             | Java														     | No html and js experience, little python experience              |
+| Jaira Nava           | Java, doing research, drawing								     | okay with python, quiet, some knowledge on javascript            |
 
 1. **What are your team’s goals for the collaboration?**
 
 	List your goals here. These should be high-level goals, and can be directly related to the project (what you hope to build), the process (how you hope to build it), the tools (what you hope to use to build it), or personal goals (what you hope to get out of the project).
+   - Learn Flask and Bootstrap
+   - Gather resources to learn HTML and CSS
+   - Learn how to use Gitlab/Git
+   - Make scalable Website
+   - Learn how to Scape data and anaylize it
+   - Daily/Weekly goals to stay on schedule 
 
 2. **Who is responsible for each activity? What roles will each member have?**
 
-	Describe team responsibilities and roles. An agile team is self-organizing, and you should be flexible, but it may make sense for certain team members to "own" certain parts of the project. Update this as needed.
+   Jahmad Attucks		- HTML/CSS Design 
+   Arturo Calderon		- Backend and HTML/CSS 
+   Brianna Cappo		- Writing the backend and help with webpage. 
+   Ed Mouko				- Working on learning JS & HTML and help write the website.
+   Jaira Nava			- HTML/CSS Design 
 
 3. **What is your timetable for activities?**  
 
-	This is a high-level timetable. Think about this in terms of mid-month and end-of-month for the remainder of the term. You will set more detailed goals later, using GitLab's project support, and track progress there.
+   Week 1: Plan out each feature/ Pick UI layout. Plan out backend 
+   Week 2-3: Front-Ready Protype 1 ready and Basic Functions of Backend Ready 
+   Week 3-8: Finsish Front/back 
+   Week 9-11: Create Site and release to test out
 
 4. **What are your team’s expectations regarding meeting attendance (being on time, leaving early, missing meetings, etc.)?**
 
-   List your attendance policy for meetings outside of class here. You will want to have at least one in-person meeting per week if possible. 
+   Meetings on Mondays at 5pm - all must attend 
+   Meetings on Wednesdays at 5pm - all must attend 
+   Meetings on Fridays at 9pm  - optional, will only last a few minutes
 
 5. **What constitutes an acceptable excuse for missing a meeting or a deadline?  What types of excuses will not be considered acceptable?**
 
-   List your policy here. There should be an expectation that everyone attends meetings, which is why it's important to have a process for when someone needs to be absent. For deadlines, again, the assumption should be that deadlines are met, but you will want a process for _proactively_ managing when they are not.
+   Acceptable:
+   - Doctors appointments 
+   - Family emergency
+   - Sick
+   - Electricity/Internet issues
+
+   Not acceptable:
+      - Sleeping
+      - Outside assignments
+
 
 6. **What process will team members follow if they have an emergency and cannot attend a team meeting or complete their individual work promised to the team (deliverable)?**
+   Message group on Teams with the excuse. Depending on excuse the team memeber may or may not need to complete their individual work (it will be decided by the rest of the Team at that time).
 
-   List your policy here. I would be specific about the amount of notice needed.
 
 7. **What are your team’s expectations regarding the quality of team members’ preparation for team meetings and the quality of the deliverables that members bring to the team?**
+   - Good communication
+   - Give updates as soon as they can
+   - Push Code as they finish
 
-   List your expectations here.
 
 8. **What are your team’s expectations regarding team members’ ideas, interactions with the team, cooperation, attitudes, and anything else regarding team-member contributions?**
+   - Stay on top of work by starting early 
+   - Being willing to work/hear out others in the team
+   - Have something to work on/learn related to the project
 
-   List your expectations here. Your goal should be to allow everyone to contribute, but you also need to ensure you can come to consensus or (if not possible) make a decision when needed. 
 
 9. **What methods will be used to keep the team on track?**
-
-   We will use GitLab features for task tracking, so focus on methods outside of this here.
+   - Weekly meetings
+   - Message updates on Teams 
+   - Setting weekly goals in the beginning of the each week.
