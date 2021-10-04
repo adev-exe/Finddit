@@ -1,28 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        crossorigin="anonymous" />
-    <title>{% block title %}Home{% endblock %}</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<title>Finddit</title>
+<style>
+  body{
+      background-image: url('https://www.thespruceeats.com/thmb/cI9Yn1OsIA2stjuFzPd7g1GxSpQ=/4609x3073/filters:fill(auto,1)/types-of-bubble-tea-766451-hero-01-a6dca4dd096a4d8abdde1a754766f851.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  .boxContainer {
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    width: 300px;
+    height: 42px;
+    border: 4x solid #e2e602;
+    padding: 0px 10px;
+    border-radius: 50px;
+  }
+  .elementContainer{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .search{
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0px 5px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: "Nunito";
+    color: #424224;
+    font-weight: 500;
+  }
+  .search:focus{
+    outline: none;
+  }
+  .material-icons{
+    font-size: 26;
+    color: #e2e602;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #31078A;
+  }
+  .topnav a {
+    float: left;
+    padding-left: 30px;
+    color: #F2F2F2;
+    text-align: 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover{
+    background-color: #ddd;
+    color: #000000;
+  }
+  .topnav a.active{
+    background-color: #F9D233;
+    color: white;
+  }
+  .topnav b{
+    float: right;
+    padding-right: 30px;
+    color: #F2F2F2;
+    text-align: 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav b:hover{
+    background-color: #ddd;
+    color: black;
+  }
+
+</style>
 </head>
 
 <body>
-    <div class="input-group">
-        <div class="form-outline">
-          <input id="search-input" type="search" id="form1" class="form-control" />
-          <label class="form-label" for="form1">Search</label>
-        </div>
-        <button id="search-button" type="button" class="btn btn-primary">
-          <i class="fas fa-search"></i>
-        </button>
-      </div>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#events">Events</a>
+    <a href="#review">Write a Review</a>
+    <b href="signup">Sign Up</b>
+    <b href="login">Login</b>
+  </div>
+  <body>
+    <div class="boxContainer">
+      <table class="elementsContainer">
+        <tr>
+          <td>
+            <input type="text" placeholder="What are you looking for?" class="search">
+          </td>
+          <td>
+            <a href="#"><i class="material-icons">search</i>
+            </a>
+          </td>
+        </tr>
+      </table>
+  </body>
 
-    <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
 </body>
-
-</html>
