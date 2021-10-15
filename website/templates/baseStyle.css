@@ -1,0 +1,66 @@
+body{
+    background-image: url('https://www.thespruceeats.com/thmb/cI9Yn1OsIA2stjuFzPd7g1GxSpQ=/4609x3073/filters:fill(auto,1)/types-of-bubble-tea-766451-hero-01-a6dca4dd096a4d8abdde1a754766f851.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+.boxContainer {
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+  width: 300px;
+  height: 42px;
+  border: 4x solid #e2e602;
+  padding: 0px 10px;
+  border-radius: 50px;
+}
+.elementContainer{
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.search{
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0px 5px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-family: "Nunito";
+  color: #424224;
+  font-weight: 500;
+}
+.search:focus{
+  outline: none;
+}
+.material-icons{
+  font-size: 26;
+  color: #e2e602;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  background-color: #31078A;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #ddbe0d;
+  color: white;
+}
+.topnav-right{
+  float: right;
+}
