@@ -1,41 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+	font-family: 'Comfortaa', cursive;
+}
 body{
-    background-image: url('https://www.thespruceeats.com/thmb/cI9Yn1OsIA2stjuFzPd7g1GxSpQ=/4609x3073/filters:fill(auto,1)/types-of-bubble-tea-766451-hero-01-a6dca4dd096a4d8abdde1a754766f851.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-.boxContainer {
-  margin: auto;
-  margin-top: 20px;
-  position: relative;
-  width: 300px;
-  height: 42px;
-  border: 4x solid #e2e602;
-  padding: 0px 10px;
-  border-radius: 50px;
+	background: url('https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2021/07/Cafes-in-Indore.jpg?fit=1000%2C750&ssl=1') no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
 }
-.elementContainer{
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
+.wrapper{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0,0.6);
+    max-width: 550px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
 }
-.search{
-  border: none;
-  height: 100%;
-  width: 100%;
-  padding: 0px 5px;
-  border-radius: 50px;
-  font-size: 18px;
-  font-family: "Nunito";
-  color: #424224;
-  font-weight: 500;
+.wrapper .input {
+    width: 85%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
-.search:focus{
-  outline: none;
+.searchbtn {
+    background: #ffec00;
+    width: 10%;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
 }
-.material-icons{
-  font-size: 26;
-  color: #e2e602;
+
+.searchbtn .fas{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
 }
 body {
   margin: 0;
