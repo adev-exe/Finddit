@@ -6,6 +6,10 @@ views = Blueprint('views',__name__)
 def home():
     return render_template("home.html")
 
+@views.route('/signuplogin.html')
+def signuplogin():
+    return render_template("signuplogin.html")
+
 
 @views.route('/login', methods=['GET', 'POST'])
 def index_func():
