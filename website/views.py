@@ -4,16 +4,12 @@ views = Blueprint('views',__name__)
 
 @views.route('/')
 def home():
-    return render_template("home.html")
+    return render_template("home.html", title = "Finddit")
 
 @views.route('/signuplogin.html')
 def signuplogin():
     return render_template("signuplogin.html")
 
-
-@views.route('/login', methods=['GET', 'POST'])
-def index_func():
-    if request.method == 'POST':
-       
-        return redirect(url_for('index'))
-    return render_template('login.html')
+@views.route('/events.html')
+def events():
+    return render_template("events.html")
