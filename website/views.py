@@ -13,3 +13,7 @@ def signuplogin():
 @views.route('/events.html')
 def events():
     return render_template("events.html")
+
+@views.route('/results.html')
+def results():
+    return render_template("results.html")
