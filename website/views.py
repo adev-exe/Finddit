@@ -4,7 +4,7 @@ views = Blueprint('views',__name__)
 
 @views.route('/')
 def home():
-    return render_template("home.html", title = "Finddit")
+    return render_template("base.html", title = "Finddit")
 
 @views.route('/signuplogin.html')
 def signuplogin():

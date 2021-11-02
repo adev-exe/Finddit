@@ -54,6 +54,7 @@ h2 {
   text-align: center;
   font-size: 30px;
   padding: 0px;
+  padding-top: 25px;
   margin-top: 0%;
   margin-bottom: 0%;
 }
@@ -81,3 +82,4 @@ p{
   margin: auto;
   margin-top: 20px;
 }
+
