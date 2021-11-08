@@ -1,14 +1,15 @@
 <!DOCTYPE html>
+
 <head>
-<meta charset="UTF-8">
-<title>{% block title %}Finddit {% endblock %}</title>
-<link rel="stylesheet" type="text/css" href="baseStyle.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <meta charset="UTF-8">
+  <title>{% block title %} {% endblock %}</title>
+  <link rel="stylesheet" type="text/css" href="baseStyle.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 </head>
 
 <body>
   <div class="topnav">
-    <!-- <a href="#"><img src="https://fcit.usf.edu/matrix/wp-content/uploads/2017/01/DanceBot-3-LG.gif" alt="Logo" width="45"></a> -->
+    <!-- <a href="#"><img src="https://fcit.usf.edu/matrix/wp-content/uploads/2017/01/DanceBot-3-LG.gif" alt="Logo" width="50"></a> -->
     <a class="active" href="#base">Home</a>
     <a href="events.html">Events</a>
     <a href="#review">Write a Review</a>
@@ -16,12 +17,24 @@
       <a href="signuplogin.html">Sign Up/Login</a>
     </div>
   </div>
+
   <body>
     <div class="wrapper">
-      <input type="text" class="input" 
-      placeholder="What are you looking for?">
-      <div class="searchbtn" onclick="location.href='results.html'"><i class="fas fa-search"></i></div>
+      <form action="{{ url_for('api.do_search') }}" method="post">
+        <input type="text" class="input" id="query" name="query" placeholder="What are you looking for?">
+       <div class="searchbtn"><i class="fas fa-search"></i></div> 
+        <button  type="submit"> search </button>
+      </form>
     </div>
   </body>
+
+  <!-- <form action="{{ url_for('api.do_search') }}" method="post">
+  <input type="text" class="input" id="query" name="query" placeholder="What are you looking for?">
+  ccc<div class="searchbtn" onclick="location.href='results.html'"><i class="fas fa-search"></i></div> cccc
+  <button class="searchbtn" type="submit"> search </button>
+</form> -->
+
+
 </body>
+
 </html>

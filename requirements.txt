@@ -1,0 +1,4 @@
+flask
+munch
+requests
+pyyaml

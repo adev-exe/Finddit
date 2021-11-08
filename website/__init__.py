@@ -8,7 +8,7 @@ def create_app():
         static_url_path='',
         static_folder='static'
     )
-    
+
     app.config.from_mapping(
         SECRET_KEY='huh',
         DATABASE=os.path.join(app.instance_path, 'website.sqlite'),
@@ -22,6 +22,9 @@ def create_app():
     from .views import views
     app.register_blueprint(views, url_prefix='/')
 
+    from .api import api
+    app.register_blueprint(api, url_prefix='/api')
+    
     from . import findditDB
     findditDB.init_app(app)
 

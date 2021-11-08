@@ -1,0 +1,23 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h3 for="place">Place</h3>
+    <h5 class="card-title">{{result.name}}</h5>
+
+    <h3 for="address">Address</h3>
+    <p class="card-text">{{result.address}}</p>
+
+    {% if result.photo is not none %}
+    <img src="{{url_for('api.get_photo', reference = result.photo)}}"></img>
+    {% endif %}
+
+    <h3 for="description">Description</h3>
+    <p> "add Description here/ need to add a variable for python and store on database"</p>
+
+    <h3 for="description">Reviews</h3>
+    <p> "add Reviews here/ need to add a variable for python and store on database"</p>
+
+    <button id="createEventBTN" type="button">Create Event</button>
+    <button id="reviewBTN" type="button">Add Review</button>
+  
+  </div>
+</div>
