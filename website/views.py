@@ -1,4 +1,6 @@
 from flask import Blueprint, render_template, request, redirect,url_for
+from .api import secrets
+from .api_utils import get_details, process_result
 
 views = Blueprint('views',__name__)
 
@@ -14,6 +16,19 @@ def signuplogin():
 def events():
     return render_template("events.html")
 
+@views.route('/login', methods=['GET', 'POST'])
+def index_func():
+    if request.method == 'POST':
+
+        return redirect(url_for('index'))
+    return render_template('login.html')
+
 @views.route('/results.html')
 def results():
     return render_template("results.html")
+
+@views.route("/location/<id>", methods=['GET'])
+def location(id):
+    place=get_details(id, secrets["api_key"])
+    place=process_result(place)
+    return render_template("location.html", location=place)

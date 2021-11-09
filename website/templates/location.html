@@ -1,0 +1,26 @@
+
+<h2>{{location.name}}</h2>
+
+<p><em>{{location.address}}</em></p>
+<p><em>{{location.phone}}</em></p>
+
+{% if location.opening_hours is not none %}
+<ul>
+  {% for period in location.opening_hours %}
+      <li>{{period}}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+{% if location.photo is not none %}
+<img src="{{url_for('api.get_photo', reference = location.photo)}}"></img>
+{% endif %}
+
+<h3 for="description">Description</h3>
+<p> "add Description here/ need to add a variable for python and store on database"</p>
+
+<h3 for="description">Reviews</h3>
+<p> "add Reviews here/ need to add a variable for python and store on database"</p>
+
+<button id="createEventBTN" type="button">Create Event</button>
+<button id="reviewBTN" type="button">Add Review</button>
