@@ -5,6 +5,7 @@ from .api_utils import get_details, process_result
 views = Blueprint('views',__name__)
 
 @views.route('/')
+@views.route('/base.html')
 def home():
     return render_template("base.html", title = "Finddit")
 
