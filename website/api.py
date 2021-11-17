@@ -16,7 +16,7 @@ def do_search():
     results = [process_result(r) for r in results]
     #results = jsonify(results)
     # return jsonify("https://maps.googleapis.com/maps/api/place/photo?photoreference=" + results[0]["photos"][0]["photo_reference"])
-    return render_template('results.html', results=results)
+    return render_template('results_details.html', results=results)
     # return("hello")
     # return render_template('index.html')
 
