@@ -14,7 +14,8 @@ def signuplogin():
 
 @views.route('/events.html')
 def events():
-    return render_template("events.html")
+    description = 'Description'
+    return render_template("events.html",  description = 'Description')
 
 @views.route('/login', methods=['GET', 'POST'])
 def index_func():
@@ -26,6 +27,10 @@ def index_func():
 @views.route('/results.html')
 def results():
     return render_template("results.html")
+
+@views.route('/review.html')
+def review():
+    return render_template("review.html", title = "Finddit")
 
 @views.route("/location/<id>", methods=['GET'])
 def location(id):
