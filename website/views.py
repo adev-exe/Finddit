@@ -25,9 +25,9 @@ def index_func():
         return redirect(url_for('index'))
     return render_template('login.html')
 
-@views.route('/results_details.html')
+@views.route('/result.html')
 def results_details():
-    return render_template("results_details.html")
+    return render_template("result.html")
 
 @views.route('/review.html')
 def review():
