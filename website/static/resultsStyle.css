@@ -9,18 +9,19 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
-    text-align: center;
-    padding: 0;
+  text-align: center;
+  padding: 0;
 }
 
 button {
+  display: inline-block;
 	border-radius: 20px;
 	border: 1px solid #330346;
 	background-color: #330346;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
-	padding: 12px 45px;
+	padding: 20px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
@@ -64,21 +65,37 @@ h3{
   font-size: 20px;
 }
 
+h4{
+  text-align: center;
+  color: rgb(68, 2, 80);
+  font-size: 15px;
+}
+
 p{
   font-size: 14px;
 	font-weight: 100;
 }
 
-.place-container {
+.card {
   background-color: rgb(255, 255, 255);
   color: black;
   position: relative;
   font-size: 25px;
   margin-top: 15px;
   padding: 10px;
-  height: fit-content;
-  width: fit-content;
+  height: 27rem;
   border-style: solid;
   margin: auto;
   margin-top: 20px;
+  width: 20rem;
+}
+
+
+.photo{
+  /* position: relative; */
+  max-height: 300px;
+  max-width: 300px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }

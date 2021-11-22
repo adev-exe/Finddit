@@ -7,17 +7,19 @@
 </head>
 
 
-<div class="card" style="width: 18rem;">
+<div class="card" >
   <div class="card-body">
 
     <h3 for="place">Place</h3>
-    <a href="{{url_for('views.location', id = result.id)}}" ><h5 class="card-title">{{result.name}}</h5></a>
+    <a href="{{url_for('views.location', id = result.id)}}">
+      <h4 class="card-title">{{result.name}}</h4>
+    </a>
 
     <h3 for="address">Address</h3>
     <p class="card-text">{{result.address}}</p>
 
     {% if result.photo is not none %}
-    <img src="{{url_for('api.get_photo', reference = result.photo)}}"></img>
+    <img class="photo" src="{{url_for('api.get_photo', reference = result.photo)}}"></img>
     {% endif %}
 
     <button id="createEventBTN" type="button">Create Event</button>
@@ -25,4 +27,3 @@
 
   </div>
 </div>
-
