@@ -83,18 +83,19 @@ p{
   font-size: 25px;
   margin-top: 15px;
   padding: 10px;
-  height: 27rem;
+  height: fit-content;
+  width: 22rem;
   border-style: solid;
   margin: auto;
   margin-top: 20px;
-  width: 20rem;
+  align-items: center;
+  justify-content: center;
 }
-
 
 .photo{
   /* position: relative; */
-  max-height: 300px;
-  max-width: 300px;
+  height: 320px;
+  width: 340px;
   align-items: center;
   justify-content: center;
   padding: 10px;
