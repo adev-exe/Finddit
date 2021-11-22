@@ -18,22 +18,36 @@
     </div>
   </div>
 
-  <body>
-    <img alt="" class="resize-image" src=" {{url_for('static', filename='images/Finddit.gif')}}" style="position:fixed; top:10px; right:20%">
-    <div class="wrapper">
-      <form action="{{ url_for('api.do_search') }}" method="post">
-        <input type="text" class="input" id="query" name="query" placeholder="What are you looking for?">
-       <div class="searchbtn"><i class="fas fa-search"></i></div> 
-        <button  type="submit"> search </button>
-      </form>
-    </div>
-  </body>
 
-  <!-- <form action="{{ url_for('api.do_search') }}" method="post">
+  <img alt="" class="resize-image" src=" {{url_for('static', filename='images/Finddit.gif')}}"
+    style="position:fixed; top:10px; right:20%">
+  <div class="wrapper">
+    <form action="{{ url_for('api.do_search') }}" method="post">
+      <input type="text" class="input" id="query" name="query" placeholder="What are you looking for?">
+      <!-- <div class="searchbtn">
+         <i class="fas fa-search"></i>
+      </div> -->
+      <button class="searchbtn" type="submit"> search </button>
+    </form>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-item"> <button id="apart" type="button">Apartment</button></div>
+    <div class="grid-item"> <button id="apart" type="button">Fast Food</button></div>
+    <div class="grid-item"> <button id="apart" type="button">Pharmacy</button></div>
+    <div class="grid-item"> <button id="apart" type="button">Day Care</button></div>
+    <div class="grid-item"> <button id="apart" type="button">Fun Activites</button></div>
+    <div class="grid-item"> <button id="apart" type="button">Parks</button></div>
+  </div>
+
+</body>
+
+<!-- <form action="{{ url_for('api.do_search') }}" method="post">
   <input type="text" class="input" id="query" name="query" placeholder="What are you looking for?">
   ccc<div class="searchbtn" onclick="location.href='results.html'"><i class="fas fa-search"></i></div> cccc
   <button class="searchbtn" type="submit"> search </button>
 </form> -->
+
 
 
 </body>
