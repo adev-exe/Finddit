@@ -1,12 +1,18 @@
+import os
 from flask import Blueprint, render_template, request, redirect,url_for
+from werkzeug.utils import append_slash_redirect
 from .api import secrets
 from .api_utils import get_details, process_result
 
 views = Blueprint('views',__name__)
 
+# imagesFolder = os.path.join('static', 'images')
+# app.config['UPLOAD_FOLDER'] = imagesFolder
+
 @views.route('/')
 @views.route('/base.html')
 def home():
+    # logo = os.path.join(app.config['UPLOAD_FOLDER'], 'Finddit.gif')
     return render_template("base.html", title = "Finddit")
 
 @views.route('/signuplogin.html')
