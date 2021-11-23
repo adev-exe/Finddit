@@ -1,4 +1,6 @@
+{% extends 'log.html' %}
 <!DOCTYPE html>
+{% block content %}
 <html lang="en">
 
 <head>
@@ -38,8 +40,25 @@
 
     <button id="joinBtn" type="button">Join</button>
     <button id="leaveBtn" type="button">Leave</button>
+    <a href="create.html" class="button" id="joinBtn" type="submit">Create</a>
   </div>
+
+  {% for post in posts %}
+    <article class="post">
+      <header>
+        <div>
+          <h1>{{ post['event_name'] }}</h1>
+          <div class="about">by {{ post['event_date'] }} on {{ post['event_time']}}</div>
+        </div>
+      </header>
+      <p class="body">{{ post['body'] }}</p>
+    </article>
+    {% if not loop.last %}
+      <hr>
+    {% endif %}
+  {% endfor %}
 
 </body>
 
 </html>
+{% endblock %}
