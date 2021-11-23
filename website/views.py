@@ -135,6 +135,10 @@ def results_details():
 def review():
     return render_template("review.html", title = "Finddit")
 
+@views.route('/reviewResult.html')
+def review_result():
+    return render_template("reviewResult.html", title = "Finddit")
+
 @views.route("/location/<id>", methods=['GET'])
 def location(id):
     place=get_details(id, secrets["api_key"])
