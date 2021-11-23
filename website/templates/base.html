@@ -18,8 +18,8 @@
     </div>
   </div>
 
-  <img alt="" class="resize-image" src="{{url_for('static', filename='images/Finddit.gif')}}">
-
+  <img alt=" " class="resize-image" src="{{ url_for('static', filename='images/Finddit.gif')}}">
+  
   <div class="wrapper">
     <form action="{{ url_for('api.do_search') }}" method="post">
       <input type="text" class="input" id="query" name="query" placeholder="What are you looking for?">
