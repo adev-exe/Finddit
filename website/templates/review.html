@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <head>
 <title>Finddit</title>
-<link rel="stylesheet" type="text/css" href="detailsStyle.css"> <!-- check if its right if not then its reviewStyles.css -->
+<link rel="stylesheet" href="{{ url_for('static', filename='reviewStyle.css')}}">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 </head>
 <body>
   <div class="topnav">
-    <a href="base.html"><img src="FindditLogo.gif" alt="Logo" width="50"></a>
     <a class="active" href="base.html">Home</a>
     <a href="events.html">Events</a>
     <a href="review.html">Write a Review</a>

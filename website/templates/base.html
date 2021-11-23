@@ -19,9 +19,7 @@
   </div>
 
   <img alt="" class="resize-image" src="{{url_for('static', filename='images/Finddit.gif')}}">
-    <!-- style="position:fixed; top:10px; right:20%"> -->
 
-  <img alt="" class="resize-image" src=" {{url_for('static', filename='images/Finddit.gif')}}">
   <div class="wrapper">
     <form action="{{ url_for('api.do_search') }}" method="post">
       <input type="text" class="input" id="query" name="query" placeholder="What are you looking for?">
