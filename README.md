@@ -1,6 +1,6 @@
 # Finddit
 
-## Set up instructions
+## Setup
 **Before running python server:**
 
 Create a file called secret.yaml in the root directory of the repository with the following contents:
@@ -8,12 +8,12 @@ Create a file called secret.yaml in the root directory of the repository with th
 api_key : 'API key goes here'
 ```
 
-In console:
+Install dependencies:
 ```shell
 pip install -r requirements.txt
 ```
-
-To run (in console):
+## Usage
+Run the following in console:
 ```shell
 python main.py
 ```
