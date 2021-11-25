@@ -12,3 +12,8 @@ In console:
 ```shell
 pip install -r requirements.txt
 ```
+
+To run (in console):
+```shell
+python main.py
+```

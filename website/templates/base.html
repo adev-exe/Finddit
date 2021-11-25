@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
   <meta charset="UTF-8">
   <title>{% block title %} {% endblock %}</title>
@@ -19,7 +18,7 @@
   </div>
 
   <img alt=" " class="resize-image" src="{{ url_for('static', filename='images/Finddit.gif')}}">
-  
+
   <div class="wrapper">
     <form action="{{ url_for('api.do_search') }}" method="post">
       <input type="text" class="input" id="query" name="query" placeholder="What are you looking for?">
@@ -28,16 +27,18 @@
   </div>
 
   <div class="grid-container">
-    <div class="grid-item"> <button id="apart" type="button">Apartment</button></div>
-    <div class="grid-item"> <button id="apart" type="button">Fast Food</button></div>
-    <div class="grid-item"> <button id="apart" type="button">Pharmacy</button></div>
-    <div class="grid-item"> <button id="apart" type="button">Day Care</button></div>
-    <div class="grid-item"> <button id="apart" type="button">Fun Activites</button></div>
-    <div class="grid-item"> <button id="apart" type="button">Parks</button></div>
+    <div class="grid-item"> <button onclick="searchForType('cafe')" id="apart" type="button">Cafe</button></div>
+    <div class="grid-item"> <button onclick="searchForType('shopping_mall')" id="apart" type="button">Shopping</button></div>
+    <div class="grid-item"> <button onclick="searchForType('park')" id="apart" type="button">Park</button></div>
+    <div class="grid-item"> <button onclick="searchForType('bar')" id="apart" type="button">Bar</button></div>
+    <div class="grid-item"> <button onclick="searchForType('library')" id="apart" type="button">Library</button></div>
+    <div class="grid-item"> <button onclick="searchForType('apartment')" id="apart" type="button">Apartment</button></div>
   </div>
 
-</body>
+  <script>
+    function searchForType(type){
+      window.location.href="{{ url_for('api.do_nearby_search', place_type = 'PLACE_TYPE')}}".replace('PLACE_TYPE', type)
+    }
+  </script>
 
 </body>
-
-</html>
