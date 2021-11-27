@@ -6,7 +6,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="eventStyle.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='eventStyle.css')}}">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <title>Finddit</title>
 </head>
@@ -22,39 +23,45 @@
     </div>
   </div>
 
-  <h2>Events</h2>
+  <!-- <h2>Events</h2>
   <div class="event-container">
     <link rel="stylesheet" href="eventStyle.css">
-
     <h3 for="description">Description</h3>
     <p> {{ description }} </p>
-
     <h3 for="Location">Location</h3>
     <p> {{ location }} </p>
-
     <h3 for="Time">Time</h3>
     <p> {{ time }} </p>
-
     <h3 for="attendees">Attendees</h3>
     <p> {{ attendees }} </p>
-
     <button id="joinBtn" type="button">Join</button>
     <button id="leaveBtn" type="button">Leave</button>
     <a href="create.html" class="button" id="joinBtn" type="submit">Create</a>
-  </div>
+  </div> -->
 
   {% for post in posts %}
     <article class="post">
-      <header>
-        <div>
-          <h1>{{ post['event_name'] }}</h1>
-          <div class="about">by {{ post['event_date'] }} on {{ post['event_time']}}</div>
+        <div class="event-container">
+          <h3 for="event_name">Event</h3>
+          <p> {{ post['event_name'] }} </p>
+
+          <h3 for="Time">Time</h3>
+          <p> {{ post['event_date'] }} on {{ post['event_time']}} </p>
+
+          <h3 for="description">Description</h3>
+          <p> {{ post['event_desc'] }} </p>
+
+          <button id="joinBtn" type="button">Join</button>
+          <button id="leaveBtn" type="button">Leave</button>
+          <button href="create.html" class="button" id="joinBtn" type="submit" 
+           onclick ="window.location.href='../create.html';">Create</button>
+
         </div>
-      </header>
-      <p class="body">{{ post['body'] }}</p>
+      <!-- <p class="body">{{ post['body'] }}</p> -->
+      
     </article>
     {% if not loop.last %}
-      <hr>
+      
     {% endif %}
   {% endfor %}
 

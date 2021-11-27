@@ -90,7 +90,7 @@ def events():
     #get all events from the database and put them on the page
     db = get_db()
     posts = db.execute(
-        'SELECT e_id, event_name, event_date, event_time'
+        'SELECT e_id, event_name, event_date, event_time, event_desc'
         ' FROM event'
     ).fetchall()
     return render_template("events.html",  description = 'Description', posts=posts)
