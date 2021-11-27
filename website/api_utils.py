@@ -4,6 +4,15 @@ from munch import munchify
 # url variable store url
 search_url = "https://maps.googleapis.com/maps/api/place/textsearch/json?"
 details_url = "https://maps.googleapis.com/maps/api/place/details/json?"
+nearby_url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?"
+
+def nearby_search(lat, lon, radius, place_type, key):
+    r = requests.get(search_url + "location={}%2C{}&radius={}&type={}&query={}&key={}".format(
+    lat, lon, radius, place_type, place_type.replace('_',' '), key))
+    x = r.json()
+    x = x['results']
+    x = munchify(x)
+    return x
 
 def get_details(id, key):
     r = requests.get(details_url + "place_id=" + id + '&key=' + key)
@@ -27,7 +36,7 @@ def get_opening_hours(hours):
 
 def process_result(r):
     return {
-    "address" : r.formatted_address,
+    "address" : r.formatted_address if "formatted_address" in r else "",
     "icon" : r.icon,
     "name" : r.name,
     "photo" : r.photos[0].photo_reference if "photos" in r else None,
