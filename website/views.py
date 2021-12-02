@@ -4,7 +4,6 @@ from flask import (
     Blueprint, render_template, request, redirect,url_for, session, flash, g
 )
 from werkzeug.security import check_password_hash, generate_password_hash
-
 from website.findditDB import get_db
 from werkzeug.utils import append_slash_redirect
 from .api import secrets
@@ -21,60 +20,8 @@ def home():
     # logo = os.path.join(app.config['UPLOAD_FOLDER'], 'Finddit.gif')
     return render_template("base.html", title = "Finddit")
 
-@views.route('/signuplogin.html', methods=('GET','POST'))
+@views.route('/signuplogin.html', methods=['GET'])
 def signuplogin():
-    if request.method == 'POST':
-        firstname = request.form['firstname']
-        lastname = request.form['lastname']
-        email = request.form['email']
-        password = request.form['password']
-        findditDB = get_db()
-        error = None
-        if not firstname:
-            error = 'First name required.'
-        elif not lastname:
-            error = 'Last name required.'
-        elif not email:
-            error = 'Email required.'
-        elif not password:
-            error = 'password name required.'
-        if error is None:
-            try:
-                findditDB.execute(
-                    "INSERT INTO user (first_name, last_name, email, password) VALUES (?, ?, ?, ?)",
-                    (firstname, lastname, email, generate_password_hash(password)),
-                )
-                findditDB.commit()
-            except findditDB.IntegrityError:
-                error = f"Email {email} is already signed up"
-            else:
-                return redirect(url_for("views.signuplogin"))
-
-        flash(error)
-    return render_template("views/signuplogin.html")
-
-#getting the login information entered into the login side of page
-#and checking if the email and password are correct
-@views.route('/login', methods=['POST'])
-def login():
-    if request.method == 'POST':
-        email2 = request.form['email']
-        password2 = request.form['password']
-        findditDB = get_db()
-        error = None
-        user = findditDB.execute( 'SELECT * FROM user WHERE email = ?', (email2,)).fetchone()
-        if user is None:
-            error = 'Email is wrong.'
-        elif not check_password_hash(user['password'], password2):
-            error = 'Password is wrong.'
-
-        if error is None:
-            session.clear()
-            session['user_first_name'] = user['first_name']
-            session['email'] = user['email']
-            return redirect(url_for('views.home'))
-
-        flash(error)
     return render_template("views/signuplogin.html")
 
 @views.before_app_request
