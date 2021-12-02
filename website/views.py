@@ -51,8 +51,12 @@ def signuplogin():
                 return redirect(url_for("views.signuplogin"))
 
         flash(error)
-    #getting the login information entered into the login side of page
-    #and checking if the email and password are correct
+    return render_template("views/signuplogin.html")
+
+#getting the login information entered into the login side of page
+#and checking if the email and password are correct
+@views.route('/login', methods=['POST'])
+def login():
     if request.method == 'POST':
         email2 = request.form['email']
         password2 = request.form['password']
@@ -62,26 +66,27 @@ def signuplogin():
         if user is None:
             error = 'Email is wrong.'
         elif not check_password_hash(user['password'], password2):
-            error = 'password is wrong.'
-        
+            error = 'Password is wrong.'
+
         if error is None:
             session.clear()
-            session['user_first_name'] = user['firstname']
-            return redirect(url_for('base.html'))
-            
-        flash(error)
+            session['user_first_name'] = user['first_name']
+            session['email'] = user['email']
+            return redirect(url_for('views.home'))
 
+        flash(error)
     return render_template("views/signuplogin.html")
 
 @views.before_app_request
 def load_logged_in_user():
     user_first_name = session.get('user_first_name')
+    user_email = session.get('email')
 
-    if user_first_name is None:
+    if user_email is None:
         g.user = None
     else:
         g.user = get_db().execute(
-            'SELECT * FROM user WHERE id = ?', (user_first_name,)
+            'SELECT * FROM user WHERE email = ?', (user_email,)
         ).fetchone()
 
 @views.route('/events.html')

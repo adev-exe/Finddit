@@ -7,6 +7,7 @@
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
+	{% include 'navbar.html' %}
 
 	<div class="box-area">
 		<header>
@@ -17,26 +18,26 @@
 				<nav>
 					<a href="../events.html">Events</a>
            <a href="../review.html">Review</a>
-           <a href="../signuplogin.html">Sign up/Login</a> 
+           <a href="../signuplogin.html">Sign up/Login</a>
 				</nav>
 			</div>
 		</header>
 
-    
+
 		<div class="banner-area">
 			<h2>{{location.name}}</h2>
 		</div>
 		<div class="content-area">
 			<div class="wrapper">
-  
+
 				<p><head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link rel="stylesheet" href="{{ url_for('static', filename='detailsStyle.css')}}">
-        
+
           <title>Finddit</title>
         </head>
-        
+
         <h3 for="address">Address</h3>
         <p><em>{{location.address}}</em></p>
         <h3 for="Contact">Contact</h3>
@@ -56,13 +57,9 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='resultsStyle.css')}}">
           <button id="createEventBTN" type="button" onclick ="window.location.href='../create.html';">Create Event</button>
           <button id="reviewBTN" type="button" onclick ="window.location.href='../reviewResult.html';">Add Review</button>
-          
+
 			</div>
 		</div>
 	</div>
 </body>
 </html>
-
-
-
-

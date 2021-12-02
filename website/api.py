@@ -1,7 +1,9 @@
 from flask import Blueprint, render_template, request, redirect,url_for, jsonify, Response
+from munch import munchify
+import yaml
 import requests, json
 from .api_utils import get_details, search, process_result, photo_url, nearby_search
-import yaml
+from .findditDB import get_db
 
 ECU_LAT = 35.6066043
 ECU_LON = -77.3669808
@@ -33,3 +35,14 @@ def do_nearby_search(place_type):
     results = nearby_search(ECU_LAT, ECU_LON, 10000, place_type, secrets["api_key"])
     results = [process_result(r) for r in results]
     return render_template('results_details.html', results=results)
+    
+@api.route("/login", methods=['POST'])
+def do_login():
+    db = get_db()
+    cur = db.cursor()
+    f = munchify(request.form)
+    cur.execute("INSERT INTO user (username, password, first_name, last_name, email) \
+    VALUES ({}, {}, {}, {}, {})".format(f.username, f.password, f.first_name, f.last_name, f.email))
+    db.commit()
+    print ("{} registered successfully".format(f.username))
+    return "hi"

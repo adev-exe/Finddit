@@ -12,8 +12,9 @@
   <title>Finddit</title>
 </head>
 
-<body>`
-  <div class="topnav">
+<body>
+  {% include 'navbar.html' %}
+  <!-- <div class="topnav">
     <link rel="stylesheet" type="text/css" href="baseStyle.css">
     <a class="active" href="base.html">Home</a>
     <a href="events.html">Events</a>
@@ -21,7 +22,7 @@
     <div class="topnav-right">
       <a href="signuplogin.html">Sign Up/Login</a>
     </div>
-  </div>
+  </div> -->
 
   <!-- <h2>Events</h2>
   <div class="event-container">
@@ -53,15 +54,15 @@
 
           <button id="joinBtn" type="button">Join</button>
           <button id="leaveBtn" type="button">Leave</button>
-          <button href="create.html" class="button" id="joinBtn" type="submit" 
+          <button href="create.html" class="button" id="joinBtn" type="submit"
            onclick ="window.location.href='../create.html';">Create</button>
 
         </div>
       <!-- <p class="body">{{ post['body'] }}</p> -->
-      
+
     </article>
     {% if not loop.last %}
-      
+
     {% endif %}
   {% endfor %}
 

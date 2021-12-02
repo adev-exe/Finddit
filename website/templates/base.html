@@ -7,15 +7,16 @@
 </head>
 
 <body>
-  <div class="topnav">
-    <!-- <a href="#"><img src="https://fcit.usf.edu/matrix/wp-content/uploads/2017/01/DanceBot-3-LG.gif" alt="Logo" width="50"></a> -->
+  {% include 'navbar.html' %}
+
+  <!-- <div class="topnav">
     <a class="active" href="base.html">Home</a>
     <a href="events.html">Events</a>
     <a href="review.html">Write a Review</a>
     <div class="topnav-right">
       <a href="signuplogin.html">Sign Up/Login</a>
     </div>
-  </div>
+  </div> -->
 
   <img alt=" " class="resize-image" src="{{ url_for('static', filename='images/Finddit.gif')}}">
 

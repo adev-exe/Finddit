@@ -1,5 +1,6 @@
 CREATE TABLE IF NOT EXISTS user (
-    username TEXT NOT NULL UNIQUE PRIMARY KEY,
+    -- user_id PRIMARY KEY AUTOINCREMENT,
+    -- username TEXT NOT NULL UNIQUE PRIMARY KEY,
     password TEXT NOT NULL,
     first_name TEXT NOT NULL,
     last_name TEXT NOT NULL,
