@@ -52,3 +52,11 @@ def photo_url(reference, key, width=400):
     reference,
     key
   )
+
+# https://developers.google.com/maps/documentation/places/web-service/details#PlaceReview
+  def place_review(author_name, rating, text, key):
+      r = requests.get(nearby_url + "author_name=" + "{}" + "rating=" + "[]" + "text=" + "{}" + '&key=' + key)
+      x = r.json()
+      x = x['result']
+      x = munchify(x)
+      return x
