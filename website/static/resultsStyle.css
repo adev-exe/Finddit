@@ -19,7 +19,7 @@ button {
 	border: 1px solid #330346;
 	background-color: #330346;
 	color: #FFFFFF;
-	font-size: 12px;
+	font-size: 16px;
 	font-weight: bold;
 	padding: 20px;
 	letter-spacing: 1px;
@@ -62,35 +62,19 @@ h2 {
 
 h3{
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 h4{
   text-align: center;
   color: rgb(68, 2, 80);
-  font-size: 25px;
+  font-size: 35px;
   text-decoration: none;
 }
 
 p{
-  font-size: 14px;
+  font-size: 19px;
 	font-weight: 100;
-}
-
-.card {
-  background-color: #ffec00;
-  color: black;
-  position: relative;
-  font-size: 25px;
-  margin-top: 15px;
-  padding: 10px;
-  height: fit-content;
-  width: 23rem;
-  border-style: solid;
-  margin: auto;
-  margin-top: 20px;
-  align-items: center;
-  justify-content: center; 
 }
 
 .photo{
@@ -101,4 +85,51 @@ p{
   justify-content: center; 
   padding: 10px 10px; 
   margin: auto;
+}
+
+.card {
+  /* background-color: #ffec00; */
+  color: black;
+  position: relative;
+  font-size: 25px;
+  margin-top: 15px;
+  padding: 10px;
+  height: fit-content;
+  width: 60rem;
+  /* width: 80%; */
+  border-style: solid;
+  margin: auto; 
+  margin-top: 20px; 
+  align-items: center;
+  justify-content: center; 
+  display: flex;
+  overflow: hidden; 
+}
+
+.img-card {
+  /* background-color: #b1b0a5; */
+  padding-left: 10px; 
+  float: left;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+
+
+.card-body{
+  /* background-color: #593a9c; */
+  padding-right: 10px; 
+  float: right;
+  margin-left: 50px;
+  position:relative ;
+}
+
+/* .card-body:empty + img-card{
+  background-color: darkslateblue;
+} */
+
+.img-card:empty + card-card{
+  background-color: darkslateblue;
+}
+.card-body button {
+  margin-top: 15px;
 }

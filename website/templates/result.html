@@ -7,6 +7,13 @@
 </head>
 
 <div class="card" >
+
+  <div class="img-card">
+    {% if result.photo is not none %}
+    <img class="photo" src="{{url_for('api.get_photo', reference = result.photo)}}"></img>
+    {% endif %}
+  </div>
+
   <div class="card-body">
 
     <h3 for="place">Place</h3>
@@ -17,13 +24,10 @@
     <h3 for="address">Address</h3>
     <p class="card-text">{{result.address}}</p>
 
-    {% if result.photo is not none %}
-    <img class="photo" src="{{url_for('api.get_photo', reference = result.photo)}}"></img>
-    {% endif %}
-
-    <button id="createEventBTN" type="button">Create Event</button>
+    <button id="createEventBTN" type="button" onclick ="window.location.href='../create.html';">Create Event</button>
     <button id="reviewBTN" type="button" onclick ="window.location.href='../reviewResult.html';">Add Review</button>
 
+    </div>
 
-  </div>
+   
 </div>
