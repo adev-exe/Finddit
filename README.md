@@ -12,6 +12,16 @@ Install dependencies:
 ```shell
 pip install -r requirements.txt
 ```
+
+Run the database init scrip:
+```shell
+set FLASK_APP=website
+```
+and then
+```shell
+python -m flask init-db
+```
+
 ## Usage
 Run the following in console:
 ```shell
