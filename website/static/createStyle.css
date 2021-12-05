@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+body {
+  background: #ffffff;
+  display: fit-content;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  margin: -20px 0 50px;
+  text-align: center;
+  padding: 0;
+}
+
+button {
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid #330346;
+  background-color: #330346;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  color: white;
+  outline: none;
+}
+
+button.ghost {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(68, 2, 80);
+  padding: 15px;
+  padding-top: 15px;
+  height: 40px;
+  margin: 0 auto;
+  font-size: 35px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  padding: 0px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+h3 {
+  text-align: center;
+  font-size: 20px;
+}
+
+h4 {
+  text-align: center;
+  color: rgb(68, 2, 80);
+  font-size: 25px;
+  text-decoration: none;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+input{
+    /* background-color: #330346; */
+    width: 250px;
+    height: 20px;
+    display: inline-block;
+    padding: 15px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.create {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+  }

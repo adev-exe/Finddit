@@ -1,19 +1,36 @@
 {% extends 'log.html' %}
 
-{% block header %}
-  <h1>{% block title %}New Event{% endblock %}</h1>
-{% endblock %}
-
 {% block content %}
+<link rel="stylesheet" type="text/css" href="createStyle.css">
+
+<!-- <div class="topnav">
+  <link rel="stylesheet" type="text/css" href="baseStyle.css">
+  <a class="active" href="base.html">Home</a>
+  <a href="events.html">Events</a>
+  <a href="review.html">Write a Review</a>
+  <div class="topnav-right">
+    <a href="signuplogin.html">Sign Up/Login</a>
+  </div>
+</div> -->
+{% include 'navbar.html' %}
+
+<div class="create">
   <form method="post">
     <label for="event">Event Name</label>
     <input types="text" name="eventN" id="eventN" value="{{ request.form['event'] }}" required>
+    
     <label for="date">Date</label>
     <input name="e_date" id="date"{{ request.form['event_date'] }}>
+    
     <label for="time">Time</label>
     <input name="e_time" id="time"{{ request.form['event_time'] }}>
+    
     <label for="time">desc</label>
     <input name="e_desc" id="e_desc"{{ request.form['event_desc'] }}>
-    <input type="submit" value="Save">
+   
+    <!-- <input type="submit" value="Save"> -->
+    <button type="submit" value="Save">Save</button>
   </form>
+
+</div>
 {% endblock %} 

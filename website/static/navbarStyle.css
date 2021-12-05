@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* body{ */
+	/* background: url('https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2021/07/Cafes-in-Indore.jpg?fit=1000%2C750&ssl=1') no-repeat center; */
+	/* background: url('https://upload.wikimedia.org/wikipedia/commons/c/ce/Greenville_sunrise.jpg') no-repeat center; */
+  /* background-color:lightblue;
+  width: 100%;
+	height: 100vh;
+  
+} */
+
+body {
+  margin: 0;
+}
+
+.topnav {
+  background-color: #330346;
+  overflow: hidden;
+  padding: 0%;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ffec00;
+  color: #330346;
+}
+
+.topnav-right{
+  float: right;
+}

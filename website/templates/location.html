@@ -9,7 +9,7 @@
 <body>
 	{% include 'navbar.html' %}
 
-	<div class="box-area">
+	<!-- <div class="box-area">
 		<header>
 			<div class="wrapper">
 				<div class="logo">
@@ -21,7 +21,7 @@
            <a href="../signuplogin.html">Sign up/Login</a>
 				</nav>
 			</div>
-		</header>
+		</header> -->
 
 
 		<div class="banner-area">
@@ -45,7 +45,8 @@
         <h3 for="Operation">Hours of Operation</h3>
 
         {% if location.opening_hours is not none %}
-        <ul>
+        <ul style="list-style-type: none;"
+		  }>
           {% for period in location.opening_hours %}
               <li>{{period}}</li>
           {% endfor %}
