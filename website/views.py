@@ -50,9 +50,8 @@ def events():
 #route for creating an event page
 @views.route('/create.html', methods=('GET', 'POST'))
 def create():
-    place = session.get("place")
     if request.method == 'POST':
-        event = request.form['name']
+        event = request.form['eventN']
         e_date = request.form['e_date']
         e_time = request.form['e_time']
         e_desc = request.form['e_desc']
@@ -72,7 +71,7 @@ def create():
             )
             db.commit()
             return render_template('events.html')
-    return render_template('create.html', palce = place)
+    return render_template('create.html')
 
 @views.route('/login', methods=['GET', 'POST'])
 def index_func():
