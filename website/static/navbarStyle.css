@@ -50,6 +50,7 @@ body {
   float: right;
 }
 
-p{
+.topnav-right a{
   color:white;
+  size: 15px;
 }
