@@ -46,11 +46,13 @@ def events():
         ' FROM event'
     ).fetchall()
     return render_template("events.html",  description = 'Description', posts=posts)
+
 #route for creating an event page
 @views.route('/create.html', methods=('GET', 'POST'))
 def create():
+    place = session.get("place")
     if request.method == 'POST':
-        event = request.form['eventN']
+        event = request.form['name']
         e_date = request.form['e_date']
         e_time = request.form['e_time']
         e_desc = request.form['e_desc']
@@ -70,7 +72,7 @@ def create():
             )
             db.commit()
             return render_template('events.html')
-    return render_template('create.html')
+    return render_template('create.html', palce = place)
 
 @views.route('/login', methods=['GET', 'POST'])
 def index_func():
@@ -95,4 +97,5 @@ def review_result():
 def location(id):
     place=get_details(id, secrets["api_key"])
     place=process_result(place)
+
     return render_template("location.html", location=place)

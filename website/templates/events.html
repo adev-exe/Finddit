@@ -40,6 +40,8 @@
     <a href="create.html" class="button" id="joinBtn" type="submit">Create</a>
   </div> -->
 
+  
+
   {% for post in posts %}
     <article class="post">
         <div class="event-container">
@@ -52,10 +54,13 @@
           <h3 for="description">Description</h3>
           <p> {{ post['event_desc'] }} </p>
 
-          <button id="joinBtn" type="button">Join</button>
-          <button id="leaveBtn" type="button">Leave</button>
           <button href="create.html" class="button" id="joinBtn" type="submit"
-           onclick ="window.location.href='../create.html';">Create</button>
+          onclick ="window.location.href='../create.html';">Create</button>
+<!-- 
+          <button id="joinBtn" type="button">Join</button>
+          <button id="leaveBtn" type="button">Leave</button> -->
+          <!-- <button href="create.html" class="button" id="joinBtn" type="submit"
+           onclick ="window.location.href='../create.html';">Create</button> -->
 
         </div>
       <!-- <p class="body">{{ post['body'] }}</p> -->

@@ -45,8 +45,7 @@
         <h3 for="Operation">Hours of Operation</h3>
 
         {% if location.opening_hours is not none %}
-        <ul style="list-style-type: none;"
-		  }>
+        <ul>
           {% for period in location.opening_hours %}
               <li>{{period}}</li>
           {% endfor %}
