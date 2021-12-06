@@ -15,9 +15,54 @@
     <!-- </div> -->
     {% include 'navbar.html' %}
     <!--  idk if i messed this up or not. if so delete line 16 and uncomment the rest -->
-  <div class="wrapper">
-    <input type="text" class="input" placeholder="Search for the Place to Review!">
-    <div class="searchbtn"><i class="fas fa-search"></i></div>
-  </div>
+  <h2>Write Your First Review!</h2>
+    <br>
+    <p>Review your favorite businesses and share your experiences within our community!</p>
+    <form action="{{ url_for('api.do_search') }}" method="post">
+      <div class="wrapper">
+        <form action="{{ url_for('api.do_search') }}" method="post">
+          <input type="text" class="input" id="query" name="query" placeholder="Search the Place, You Want to Review!">
+          <button class="searchbtn" type="submit"> search </button>
+        </form>
+      </div>
+      <img alt=" " class="resize-image" src="{{ url_for('static', filename='images/FindditReview.png')}}">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr class="solid">
+    <h2>Most Recent Reviews!</h2>
+    <div class="container"> 
+      <img src="{{url_for('static', filename='images/icon.jpeg')}}" alt="Avatar" style="width:90px">
+      <p><span>PITTCCStudent56</span></p>
+      <h3>Name of Place</h3>
+      <h3>Rating: </h3>
+      <p>I do not recommend eating here! The service is horrible, you would wait an hour getting you food even when there's barely a lot of people.
+        The staff would act rude towards you for asking them a simple question. </p>
+    </div>
+    <div class="container">
+      <img src="{{url_for('static', filename='images/icon.jpeg')}}" alt="Avatar" style="width:90px">
+      <p><span >ECUStudent98</span></p>
+      <h3>Name of Place</h3>
+      <h3>Rating: </h3>
+      <p>This place is amazing! Everyone is so nice to you especially if you are a newcomer to the place. Service is amazing and would definitely come back again.</p>
+    </div>
+    <div class="container">
+      <img src="{{url_for('static', filename='images/icon.jpeg')}}" alt="Avatar" style="width:90px">
+      <p><span >ECUStudent21</span></p>
+      <h3>Name of Place</h3>
+      <h3>Rating: </h3>
+      <p>This place is amazing! Everyone is so nice to you especially if you are a newcomer to the place. Service is amazing and would definitely come back again.</p>
+    </div>
+    <div class="container">
+      <img src="{{url_for('static', filename='images/icon.jpeg')}}" alt="Avatar" style="width:90px">
+      <p><span >PITTCCStudent21</span></p>
+      <h3>Name of Place</h3>
+      <h3>Rating: </h3>
+      <p>This place is amazing! Been living at this apartment for a couple months. The property managers are nice and make sure if I have any problems with my apartment, I can always depend on them!</p>
+    </div>
 </body>
 </html>
