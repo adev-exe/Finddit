@@ -65,7 +65,7 @@ def login():
 
         if error is None:
             session.clear()
-            session['user_first_name'] = user['first_name']
+            #session['user_first_name'] = user['first_name']
             session['email'] = user['email']
             return redirect(url_for('views.home'))
 

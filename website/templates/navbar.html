@@ -5,7 +5,11 @@
   <a href="{{ url_for('views.events')}}">Events</a>
   <a href="{{ url_for('views.review')}}">Write a Review</a>
   <div class="topnav-right">
-    <a href="{{ url_for('views.signuplogin')}}">Sign Up/Login</a>
-    <a> {{session[Hello, 'user_first_name']}} </a>
+    {% if g.user %}
+      <li><span>{{ g.user['email'] }}</span>
+      <li><a href="{{ url_for('views.logout') }}">Log Out</a>
+    {% else %}
+      <a href="signuplogin.html">Sign Up/Login</a>
+    {% endif %}
   </div>
 </div>

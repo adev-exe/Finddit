@@ -1,13 +1,13 @@
 import os
 import functools
 from flask import (
-    Blueprint, render_template, request, redirect,url_for, session, flash, g
+    Blueprint, render_template, request, redirect,url_for, flash, g
 )
 from .reviews import add_review, get_reviews
 from werkzeug.security import check_password_hash, generate_password_hash
 from website.findditDB import get_db
 from werkzeug.utils import append_slash_redirect
-from .api import secrets
+from .api import secrets, session
 from .api_utils import get_details, process_result
 
 views = Blueprint('views',__name__)
@@ -27,15 +27,20 @@ def signuplogin():
 
 @views.before_app_request
 def load_logged_in_user():
-    user_first_name = session.get('user_first_name')
+    #user_first_name = session.get('user_first_name')
     user_email = session.get('email')
 
     if user_email is None:
         g.user = None
     else:
         g.user = get_db().execute(
-            'SELECT * FROM user WHERE email = ?', (user_email,)
+            'SELECT email FROM user WHERE email = ?', (user_email,)
         ).fetchone()
+
+@views.route('/logout')
+def logout():
+    session.clear()
+    return redirect(url_for('views.home'))
 
 @views.route('/events.html')
 def events():
@@ -71,8 +76,8 @@ def create():
                 (event, e_date, e_time, e_desc)
             )
             db.commit()
-            return render_template('events.html')
-    return render_template('create.html')
+            return redirect(url_for("views.event"))
+    return render_template("create.html")
 
 @views.route('/login', methods=['GET', 'POST'])
 def index_func():
