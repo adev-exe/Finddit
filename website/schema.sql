@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS user (
 
 CREATE TABLE IF NOT EXISTS event (
     e_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    event_name TEXT UNIQUE NOT NULL,
+    event_name TEXT NOT NULL,
     event_date INTEGER NOT NULL,
     event_time time NOT NULL,
     event_desc TEXT NOT NULL

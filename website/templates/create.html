@@ -1,19 +1,25 @@
 {% extends 'log.html' %}
 
 {% block header %}
-  <h1>{% block title %}New Event{% endblock %}</h1>
+  <!-- <h1>{% block title %}New Event{% endblock %}</h1> -->
 {% endblock %}
 
 {% block content %}
-  <form method="post">
-    <label for="event">Event Name</label>
-    <input types="text" name="eventN" id="eventN" value="{{ request.form['event'] }}" required>
-    <label for="date">Date</label>
-    <input name="e_date" id="date"{{ request.form['event_date'] }}>
-    <label for="time">Time</label>
-    <input name="e_time" id="time"{{ request.form['event_time'] }}>
-    <label for="time">desc</label>
-    <input name="e_desc" id="e_desc"{{ request.form['event_desc'] }}>
-    <input type="submit" value="Save">
+
+  {% include 'navbar.html' %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='createStyle.css')}}"> 
+
+<form class ="create" method="post">
+    <h1>Create an Event</h1>
+
+    <input types="text" name="eventN" id="eventN" value="{{ request.form['event'] }}" required placeholder="Event Name">
+    <!-- <label for="date">Date</label> -->
+    <input name="e_date" id="date"{{ request.form['event_date'] }} placeholder="Date">
+    <!-- <label for="time">Time</label> -->
+    <input name="e_time" id="time"{{ request.form['event_time'] }} placeholder="Time">
+    <!-- <label for="time">desc</label> -->
+    <input name="e_desc" id="e_desc"{{ request.form['event_desc'] }} placeholder="Description">
+    <button name="submit" >Submit</button>
   </form>
 {% endblock %} 
