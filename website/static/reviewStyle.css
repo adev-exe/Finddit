@@ -132,6 +132,6 @@ button.ghost {
 }
 .resize-image {
   position:fixed;
-  top: 10%;
+  top: 50px;
   right:100px;
 } 

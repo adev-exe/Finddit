@@ -49,3 +49,8 @@ body {
 .topnav-right{
   float: right;
 }
+
+.topnav-right a{
+  color:white;
+  size: 15px;
+}
