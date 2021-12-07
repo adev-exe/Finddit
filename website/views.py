@@ -3,6 +3,7 @@ import functools
 from flask import (
     Blueprint, render_template, request, redirect,url_for, session, flash, g
 )
+from .reviews import add_review, get_reviews
 from werkzeug.security import check_password_hash, generate_password_hash
 from website.findditDB import get_db
 from werkzeug.utils import append_slash_redirect
@@ -76,7 +77,6 @@ def create():
 @views.route('/login', methods=['GET', 'POST'])
 def index_func():
     if request.method == 'POST':
-
         return redirect(url_for('index'))
     return render_template('login.html')
 
@@ -88,13 +88,20 @@ def results_details():
 def review():
     return render_template("review.html", title = "Finddit")
 
-@views.route('/reviewResult.html')
-def review_result():
-    return render_template("reviewResult.html", title = "Finddit")
+@views.route('/location/<id>/reviewResult.html', methods=['GET', 'POST'])
+def review_result(id):
+    if request.method == 'POST':
+        rate = request.form['rate']
+        content = request.form['content']
+        print(rate, content)
+        add_review(id, session["email"], session["user_first_name"], rate, content)
+        return redirect(url_for('views.location', id = id))
+    return render_template("reviewResult.html", title = "Finddit", id = id)
 
 @views.route("/location/<id>", methods=['GET'])
 def location(id):
     place=get_details(id, secrets["api_key"])
     place=process_result(place)
-
-    return render_template("location.html", location=place)
+    reviews = get_reviews(id)
+    print(reviews)
+    return render_template("location.html", location=place, reviews = reviews)

@@ -2,28 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Fixed Header with html and css | Collapsing Header</title>
+	<title>Finddit</title>
 	<link href="{{url_for('api.get_photo', reference = location.photo)}}" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
+	<!-- <link href="style.css" rel="stylesheet"> -->
 </head>
 <body>
 	{% include 'navbar.html' %}
-
-	<!-- <div class="box-area">
-		<header>
-			<div class="wrapper">
-				<div class="logo">
-					<a class="active" href="../base.html">Home</a>
-				</div>
-				<nav>
-					<a href="../events.html">Events</a>
-           <a href="../review.html">Review</a>
-           <a href="../signuplogin.html">Sign up/Login</a>
-				</nav>
-			</div>
-		</header> -->
-
-
 		<div class="banner-area">
 			<h2>{{location.name}}</h2>
 		</div>
@@ -53,11 +37,12 @@
         {% endif %}
 
         <h3 for="description">Reviews</h3>
-        <p> "add Reviews here/ need to add a variable for python and store on database"</p></p>
         <link rel="stylesheet" href="{{ url_for('static', filename='resultsStyle.css')}}">
-          <button id="createEventBTN" type="button" onclick ="window.location.href='../create.html';">Create Event</button>
-          <button id="reviewBTN" type="button" onclick ="window.location.href='../reviewResult.html';">Add Review</button>
-
+        <button id="createEventBTN" type="button" onclick ="window.location.href='../create.html';">Create Event</button>
+        <button id="reviewBTN" type="button" onclick ="window.location.href='/location/{{location.id}}/reviewResult.html';">Add Review</button>
+				{% for review in reviews %}
+				{{review.name}} {{review.email}} {{review.rating}} {{review.content}}
+				{% endfor %}
 			</div>
 		</div>
 	</div>
