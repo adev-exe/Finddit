@@ -7,17 +7,6 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
-body{
-	/* background: url('https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2021/07/Cafes-in-Indore.jpg?fit=1000%2C750&ssl=1') no-repeat center; */
-	/* background: url('https://upload.wikimedia.org/wikipedia/commons/c/ce/Greenville_sunrise.jpg') no-repeat center; */
-  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/trees.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color:lightblue;
-
-}
-
 .wrapper{
 	position: absolute;
   top: 50%;
@@ -158,6 +147,7 @@ body {
   position: relative;
   display: inline;
 }
+
 button:active {
 	transform: scale(0.95);
 }

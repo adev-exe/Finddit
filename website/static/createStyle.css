@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 
+
 body {
-  background: #ffffff;
   display: fit-content;
   justify-content: center;
   align-items: center;
@@ -68,7 +68,6 @@ input {
 	padding: 12px 15px;
 	margin: 8px 0;
 	width: 100%;
- 
 }
 
 .create {
