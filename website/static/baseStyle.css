@@ -10,9 +10,11 @@
 body{
 	/* background: url('https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2021/07/Cafes-in-Indore.jpg?fit=1000%2C750&ssl=1') no-repeat center; */
 	/* background: url('https://upload.wikimedia.org/wikipedia/commons/c/ce/Greenville_sunrise.jpg') no-repeat center; */
+  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/trees.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   background-color:lightblue;
-  width: 100%;
-	height: 100vh;
   
 }
 
