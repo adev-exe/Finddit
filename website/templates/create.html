@@ -5,15 +5,15 @@
 {% endblock %}
 
 {% block content %}
-  <form method="post">
+  <form method="post" action="{{url_for('views.create')}}">
     <label for="event">Event Name</label>
     <input types="text" name="eventN" id="eventN" value="{{ request.form['event'] }}" required>
     <label for="date">Date</label>
-    <input name="e_date" id="date"{{ request.form['event_date'] }}>
+    <input name="e_date" id="date">
     <label for="time">Time</label>
-    <input name="e_time" id="time"{{ request.form['event_time'] }}>
+    <input name="e_time" id="time">
     <label for="time">desc</label>
-    <input name="e_desc" id="e_desc"{{ request.form['event_desc'] }}>
+    <input name="e_desc" id="e_desc">
     <input type="submit" value="Save">
   </form>
-{% endblock %} 
+{% endblock %}

@@ -76,7 +76,7 @@ def create():
                 (event, e_date, e_time, e_desc)
             )
             db.commit()
-            return redirect(url_for("views.event"))
+            return redirect(url_for("views.events"))
     return render_template("create.html")
 
 @views.route('/login', methods=['GET', 'POST'])
