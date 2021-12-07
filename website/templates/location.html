@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Finddit</title>
 	<link href="{{url_for('api.get_photo', reference = location.photo)}}" rel="stylesheet">
-	<!-- <link href="style.css" rel="stylesheet"> -->
 </head>
 <body>
 	{% include 'navbar.html' %}
@@ -38,11 +37,45 @@
 
         <h3 for="description">Reviews</h3>
         <link rel="stylesheet" href="{{ url_for('static', filename='resultsStyle.css')}}">
-        <button id="createEventBTN" type="button" onclick ="window.location.href='../create.html';">Create Event</button>
-        <button id="reviewBTN" type="button" onclick ="window.location.href='/location/{{location.id}}/reviewResult.html';">Add Review</button>
 				{% for review in reviews %}
-				{{review.name}} {{review.email}} {{review.rating}} {{review.content}}
+				<link rel="stylesheet" href="{{ url_for('static', filename='reviewSectionStyle.css')}}">
+				<body>
+				    <section id="testimonials">
+				        <div class="testimonial-heading">
+				        </div>
+				        <div class="testimonial-box-container">
+				            <div class="testimonial-box">
+				                <div class="box-top">
+				                    <div class="profile">
+				                        <div class="profile-img">
+				                            <img src="{{url_for('static', filename='images/icon.jpeg')}}" />
+				                        </div>
+				                        <div class="name-email">
+				                            <strong>{{review.name}}</strong>
+				                            <span>{{review.email}}</span>
+				                        </div>
+				                    </div>
+				                    <div class="ratings">
+				                        <i class="fas fa-star"></i>
+				                        <i class="fas fa-star"></i>
+				                        <i class="fas fa-star"></i>
+				                        <i class="fas fa-star"></i>
+				                        <i class="far fa-star"></i><!--Empty star-->
+																{{review.rating}} /5 Stars
+				                    </div>
+				                </div>
+				                <div class="student-reviews">
+				                    <p>{{review.content}}</p>
+				                </div>
+				            </div>
+				            </div>
+				        </section>
+				</body>
+
+				<!-- {{review.name}} {{review.email}} {{review.rating}} {{review.content}} -->
 				{% endfor %}
+				<button id="createEventBTN" type="button" onclick ="window.location.href='../create.html';">Create Event</button>
+				<button id="reviewBTN" type="button" onclick ="window.location.href='/location/{{location.id}}/reviewResult.html';">Add Review</button>
 			</div>
 		</div>
 	</div>

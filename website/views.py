@@ -93,6 +93,14 @@ def results_details():
 def review():
     return render_template("review.html", title = "Finddit")
 
+@views.route("/location/<id>/reviewResult.html", methods=['GET'])
+def location_result(id):
+    place=get_details(id, secrets["api_key"])
+    place=process_result(place)
+    reviews = get_reviews(id)
+    print(reviews)
+    return render_template("reviewResult.html", location = place, reviews = reviews)
+
 @views.route('/location/<id>/reviewResult.html', methods=['GET', 'POST'])
 def review_result(id):
     if request.method == 'POST':
@@ -100,8 +108,8 @@ def review_result(id):
         content = request.form['content']
         print(rate, content)
         add_review(id, session["email"], session["user_first_name"], rate, content)
-        return redirect(url_for('views.location', id = id))
-    return render_template("reviewResult.html", title = "Finddit", id = id)
+        return redirect(url_for('views.location', id = id, location = location))
+    return render_template("reviewResult.html", title = "Finddit", id = id, location = location)
 
 @views.route("/location/<id>", methods=['GET'])
 def location(id):
@@ -109,4 +117,4 @@ def location(id):
     place=process_result(place)
     reviews = get_reviews(id)
     print(reviews)
-    return render_template("location.html", location=place, reviews = reviews)
+    return render_template("location.html", location = place, reviews = reviews)
