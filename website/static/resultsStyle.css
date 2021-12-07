@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
 body {
-
-	display: fit-content;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-	height: 100vh;
-	margin: -20px 0 50px;
   text-align: center;
   padding: 0;
+  margin-bottom: 20px ;
 }
 
 button {
