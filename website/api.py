@@ -37,17 +37,6 @@ def do_nearby_search(place_type):
     results = [process_result(r) for r in results]
     return render_template('results_details.html', results=results)
 
-# @api.route("/login", methods=['POST'])
-# def do_login():
-#     db = get_db()
-#     cur = db.cursor()
-#     f = munchify(request.form)
-#     cur.execute("INSERT INTO user (username, password, first_name, last_name, email) \
-#     VALUES ({}, {}, {}, {}, {})".format(f.username, f.password, f.first_name, f.last_name, f.email))
-#     db.commit()
-#     print ("{} registered successfully".format(f.username))
-#     return "hi"
-
 #getting the login information entered into the login side of page
 #and checking if the email and password are correct
 @api.route('/login', methods=['POST'])
@@ -65,7 +54,7 @@ def login():
 
         if error is None:
             session.clear()
-            #session['user_first_name'] = user['first_name']
+            session['user_first_name'] = user['first_name']
             session['email'] = user['email']
             return redirect(url_for('views.home'))
 
